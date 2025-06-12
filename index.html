@@ -14,15 +14,15 @@
 </head>
 <body id="inicio">
   <header id="header" class="flex justify-between items-center w-full px-6 py-5 sticky top-0 z-2">
-    <a href="#inicio" class=""><h2 class="flex text-xl font-semibold"><img src="./assets/tijera-y-peine.png" alt="tijera-y-peine" class="h-8 w-8"> Universe Barber Shop</h2></a>
-    <nav class="flex justify-around gap-6">
+    <a href="#inicio" class="hidden lg:block"><h2 class="flex text-xl font-semibold"><img src="./assets/tijera-y-peine.png" alt="tijera-y-peine" class="h-8 w-8"> Universe Barber Shop</h2></a>
+    <nav class="hidden lg:flex justify-around gap-6">
       <a href="#inicio" class="anchor">Inicio</a>
       <a href="#galeria" class="anchor">Galería</a>
       <a href="#servicios" class="anchor">Servicios</a>
-      <a href="" class="anchor">Nosotros</a>
+      <a href="#nosotros" class="anchor">Nosotros</a>
       <a href="" class="anchor">Contacto</a>
     </nav>
-    <a href="" class="reserva">Reservar turno</a>
+    <a href="" class="reserva hidden lg:block">Reservar turno</a>
   </header>
   <main>
     <section class="flex justify-between w-full h-screen relative">
@@ -34,7 +34,7 @@
       </div>
    <img src="./assets/wbg.png" alt="" class="h-140 w-160 img-left img-init "> 
     </section>
-    <section id="galeria" class="flex flex-col items-center mb-40">
+    <section id="galeria" class="flex flex-col items-center pb-40 bg-[#d1d0d0]">
       <h2 class="text-4xl font-semibold mt-24">Galería de cortes</h2>
       <div class="line mt-1 mb-2"></div>
       <h3 class="text-xl text-gray-700">Mirá nuestros cortes y encontrá tu look!</h3>
@@ -113,49 +113,131 @@
         </div>
       </article>
     </section>
-    <section id="servicios" class="flex flex-col justify-center items-center bg-black">
+    <section id="servicios" class="flex flex-col justify-center items-center bg-[#111116] pb-40">
       <h2 class="text-white text-4xl font-semibold mt-24">Nuestros Servicios</h2>
       <div class="line mt-1 mb-2"></div>
       <h3 class="text-xl text-gray-300 w-200 text-center">Ofrecemos una amplia gama de servicios de barbería para satisfater todas tus necesidades.</h3>
       <article class="grid grid-cols-4 grid-rows-2 gap-10 mt-20 mx-20">
-        <div class="w-100 h-60 bg-[#111111] text-[#211d65] flex flex-col items-center border-1 hover:-translate-y-2 transition-transform duration-300">
-          <h3 class="text-2xl font-semibold mt-4 text-white">Corte Clásico</h3>
+        <div class="w-[21vw] h-60 bg-[#111111] text-[#211d65] flex flex-col items-center border-1 hover:-translate-y-2 transition-transform duration-300">
+          <h3 class="service-t text-2xl font-semibold mt-4 text-white">Corte Clásico</h3>
           <div class="line-card"></div>
-          <p class="text-gray-300 mt-6 text-center mx-6">Corte tradicional con tijeras y máquina para un look elegante y atemporal.</p>
+          <p class="service-d text-gray-300 mt-6 text-center mx-6">Corte tradicional con tijeras y máquina para un look elegante y atemporal.</p>
           <p class="text-white mt-8 text-2xl font-semibold">$10000.00</p>
         </div>
-        <div class="w-100 h-60 bg-[#111111] text-[#211d65] flex flex-col items-center border-1 hover:-translate-y-2 transition-transform duration-300">
-          <h3 class="text-2xl font-semibold mt-4 text-white">Fade & Diseño</h3>
+        <div class="w-[21vw] h-60 bg-[#111111] text-[#211d65] flex flex-col items-center border-1 hover:-translate-y-2 transition-transform duration-300">
+          <h3 class="service-t text-2xl font-semibold mt-4 text-white">Fade & Diseño</h3>
           <div class="line-card"></div>
-          <p class="text-gray-300 mt-6 text-center mx-6">Degradado perfecto con diseños personalizados para un estilo único</p>
+          <p class="service-d text-gray-300 mt-6 text-center mx-6">Degradado perfecto con diseños personalizados para un estilo único</p>
           <p class="text-white mt-8 text-2xl font-semibold">$10000.00</p>
         </div>
-        <div class="w-100 h-60 bg-[#111111] text-[#211d65] flex flex-col items-center border-1 hover:-translate-y-2 transition-transform duration-300">
-          <h3 class="text-2xl font-semibold mt-4 text-white">Servicio de Mechas</h3>
+        <div class="w-[21vw] h-60 bg-[#111111] text-[#211d65] flex flex-col items-center border-1 hover:-translate-y-2 transition-transform duration-300">
+          <h3 class="service-t text-2xl font-semibold mt-4 text-white">Servicio de Mechas</h3>
           <div class="line-card"></div>
-          <p class="text-gray-300 mt-6 text-center mx-6">Remarcá tu estilo con nuestro servicio de mechas, perfectas para un look moderno y atrevido.</p>
+          <p class="service-d text-gray-300 mt-6 text-center mx-6">Remarcá tu estilo con nuestro servicio de mechas, perfectas para un look moderno y atrevido.</p>
           <p class="text-white mt-8 text-2xl font-semibold">$10000.00</p>
         </div>
-        <div class="w-100 h-60 bg-[#111111] text-[#211d65] flex flex-col items-center border-1 hover:-translate-y-2 transition-transform duration-300">
-          <h3 class="text-2xl font-semibold mt-4 text-white">Coloración</h3>
+        <div class="w-[21vw] h-60 bg-[#111111] text-[#211d65] flex flex-col items-center border-1 hover:-translate-y-2 transition-transform duration-300">
+          <h3 class="service-t text-2xl font-semibold mt-4 text-white">Coloración</h3>
           <div class="line-card"></div>
-          <p class="text-gray-300 mt-6 text-center mx-6">Servicio profesional de coloración para un cambio de look radical.</p>
+          <p class="service-d text-gray-300 mt-6 text-center mx-6">Servicio profesional de coloración para un cambio de look radical.</p>
           <p class="text-white mt-8 text-2xl font-semibold">$10000.00</p>
         </div>
-        <div class="col-start-2 w-100 h-60 bg-[#111111] text-[#211d65] flex flex-col items-center border-1 hover:-translate-y-2 transition-transform duration-300">
-          <h3 class="text-2xl font-semibold mt-4 text-white">Servicio de Mechas + Corte</h3>
+        <div class="col-start-2 w-[21vw] h-60 bg-[#111111] text-[#211d65] flex flex-col items-center border-1 hover:-translate-y-2 transition-transform duration-300">
+          <h3 class="service-t text-2xl font-semibold mt-4 text-white">Servicio de Mechas + Corte</h3>
           <div class="line-card"></div>
-          <p class="text-gray-300 mt-6 text-center mx-6">Corte tradicional con tijeras y máquina para un look elegante y atemporal.</p>
+          <p class="service-d text-gray-300 mt-6 text-center mx-6">Corte tradicional con tijeras y máquina para un look elegante y atemporal.</p>
           <p class="text-white mt-8 text-2xl font-semibold">$10000.00</p>
         </div>
-        <div class="col-start-3 w-100 h-60 bg-[#111111] text-[#211d65] flex flex-col items-center border-1 hover:-translate-y-2 transition-transform duration-300">
-          <h3 class="text-2xl font-semibold mt-4 text-white">Coloración + Corte</h3>
+        <div class="col-start-3 w-[21vw] h-60 bg-[#111111] text-[#211d65] flex flex-col items-center border-1 hover:-translate-y-2 transition-transform duration-300">
+          <h3 class="service-t text-2xl font-semibold mt-4 text-white">Coloración + Corte</h3>
           <div class="line-card"></div>
-          <p class="text-gray-300 mt-6 text-center mx-6">Corte tradicional con tijeras y máquina para un look elegante y atemporal.</p>
+          <p class="service-d text-gray-300 mt-6 text-center mx-6">Corte tradicional con tijeras y máquina para un look elegante y atemporal.</p>
           <p class="text-white mt-8 text-2xl font-semibold">$10000.00</p>
         </div>
       </article>
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+    <section id="nosotros" class="bg-[#000] w-sreen h-[90vh] pb-20">
+      <article class="flex flex-row gap-2] h-full w-full justify-around items-center text-center 2xl:text-start">
+        <div class="hidden 2xl:block w-[50%] h-[50%] ml-20">
+          <img src="./assets/wbg.png" alt="" class="w-full h-full">
+        </div>
+        <div class="space-y-6 px-20">
+          <h2 class="text-white text-5xl font-bold">Sobre Nosotros</h2>
+          <p class="text-white text-2xl">Universe Barber Shop nació en 2018 con la visión de crear un espacio donde la tradición de la barbería se fusiona con las tendencias modernas.</p>
+          <p class="text-white text-lg">Nuestro equipo está formado por barberos profesionales con años de experiencia y pasión por su oficio. Nos especializamos en cortes clásicos, modernos y diseños personalizados para todo tipo de cabello y estilo.</p>
+          <p class="text-white text-lg">En Universe Barber Shop no solo ofrecemos cortes de cabello, sino una experiencia completa donde cada cliente se siente especial y sale con un look que refleja su personalidad.</p>
+          <div class="flex pt-4 justify-center 2xl:justify-start">
+            <div class="text-white border-r-2 border-gray-400 pr-6 text-center">
+              <p class="text-3xl">5+</p>
+              <p>Años de experiencia</p>
+            </div>
+            <div class="text-white border-r-2 border-gray-400 ml-6 pr-6 text-center">
+              <p class="text-3xl">100+</p>
+              <p>Clientes satisfechos</p>
+            </div>
+            <div class="text-white pl-6 text-center">
+              <p class="text-3xl">4</p>
+              <p>Barberos expertos</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class=" h-[80vh] mt-40">
+      <article class="flex flex-col items-center">
+        <h2 class="text-5xl font-bold">Lo Que Dicen Nuestros Clientes</h2>
+        <h3 class="text-xl text-gray-600 mt-4 mb-16">Descubrí por qué nuestros clientes nos eligen una y otra vez.</h3>
+        <div class="flex gap-10">
+          <div class="flex flex-col w-[20vw] h-[25vh] border-gray-300 border-2 rounded px-4">
+            <div class="mt-4 flex"><img src="./assets/estrella.png" alt="" class="w-7 h-7"><img src="./assets/estrella.png" alt="" class="w-7 h-7"><img src="./assets/estrella.png" alt="" class="w-7 h-7"><img src="./assets/estrella.png" alt="" class="w-7 h-7"><img src="./assets/estrella.png" alt="" class="w-7 h-7"></div>
+            <p class="mt-6 mb-12 text-gray-600 text-lg">Excelente atención, muy buena onda de los chicos. Muy buen servicio.</p>
+            <div class="flex">
+              <img src="./assets/batr (12).png" alt="" class="w-10 h-10 ">
+              <div class="flex flex-col ml-4">
+                <p>Juan Pablo</p> 
+                <p>cliente</p> 
+              </div> 
+            </div>
+          </div>
+          <div class="flex flex-col w-[20vw] h-[25vh] border-gray-300 border-2 rounded px-4">
+            <div class="mt-4 flex"><img src="./assets/estrella.png" alt="" class="w-7 h-7"><img src="./assets/estrella.png" alt="" class="w-7 h-7"><img src="./assets/estrella.png" alt="" class="w-7 h-7"><img src="./assets/estrella.png" alt="" class="w-7 h-7"><img src="./assets/estrella.png" alt="" class="w-7 h-7"></div>
+            <p class="mt-6 mb-6 text-gray-600 text-lg">Excelentes profesionales, lugar muy lindo. Un gusto siempre venir a la barber. Super recomendable</p>
+            <div class="flex">
+              <img src="./assets/batr (12).png" alt="" class="w-10 h-10 ">
+              <div class="flex flex-col ml-4">
+                <p>Matias Berton</p> 
+                <p>cliente</p> 
+              </div> 
+            </div>
+          </div>
+          <div class="flex flex-col w-[20vw] h-[25vh] border-gray-300 border-2 rounded px-4">
+            <div class="mt-4 flex"><img src="./assets/estrella.png" alt="" class="w-7 h-7"><img src="./assets/estrella.png" alt="" class="w-7 h-7"><img src="./assets/estrella.png" alt="" class="w-7 h-7"><img src="./assets/estrella.png" alt="" class="w-7 h-7"><img src="./assets/estrella.png" alt="" class="w-7 h-7"></div>
+            <p class="mt-6 text-gray-600 text-lg">Excelente atención y servicio!!, mi peque Feliz!! Gracias <span class="text-red-500 text-2xl">♥</span>!!</p>
+            <div class="flex mt-10">
+              <img src="./assets/batr (12).png" alt="" class="w-10 h-10 ">
+              <div class="flex flex-col ml-4">
+                <p>Sil Blaya</p> 
+                <p>cliente</p> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section class="flex bg-[#eee]">
+      <div class="flex flex-col">
+        <h2 class="text-3xl font-semibold">Contáctanos</h2>
+        <h3 class="text-gray-700">Estamos aquí para responder tus preguntas y ayudarte a obtener ese nuevo look.</h3>
+        <span>!!! Juan Bautista Alberdi 1530, S2126 Pueblo Esther, Santa Fe</span>
+        <span>!!! +54 341 394-1580</span>
+        <span>!!! </span>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div></div>
     </section>
   </main>
 </body>

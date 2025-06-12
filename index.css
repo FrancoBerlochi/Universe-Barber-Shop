@@ -94,16 +94,20 @@ a {
 .appear {
   overflow: hidden;
   width: 0;
-  animation: appear 2s steps(30) forwards, blinck 1s infinite forwards;
+  animation: appear 10s steps(30) infinite, blinck 1s infinite forwards;
 }
 
 @keyframes appear {
-  from {
+  0% {
     width: 0px;
   }
 
-  to {
+  18%,82%{
     width: 300px;
+  }
+
+  100% {
+    width: 0px;
   }
 }
 
@@ -174,5 +178,14 @@ a {
     padding-right: 100px;
     padding-left: 100px;
     padding-top: 300px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1366px) {
+  .service-t{
+    font-size: 1.2rem;
+  }
+  .service-d{
+    font-size: .9rem;
   }
 }
