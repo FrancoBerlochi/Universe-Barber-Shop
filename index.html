@@ -15,11 +15,24 @@
 <body id="inicio">
   <header id="header" class="flex justify-between items-center w-full px-6 py-5 sticky top-0 z-2">
     <a href="#inicio" class="lg:block"><h2 class="max-md:text-sm flex text-xl font-semibold"><img src="./assets/tijera-y-peine.png" alt="tijera-y-peine" class="max-md:h-6 max-md:h-4 h-8 w-8"> Universe Barber Shop</h2></a>
-    <div class="xl:hidden relative w-[2rem] h-[2rem]">
-    <input type="checkbox" class="xl:hidden inset-0 absolute z-50 opacity-0"/>
-    <label class="burger absolute z-40"></label>
+    <div class="xl:hidden relative w-[2rem] h-[2rem] ">
+      <input type="checkbox" class="xl:hidden inset-0 absolute z-50 opacity-0 burger-check"/>
+      <div class="burger-container absolute inset-0 z-40">
+        <label class="burger"></label>
+      </div>
+      <div class="barber-pole absolute z-40"></div>
+      <div class="burger-nav w-screen h-[103vh]">
+        <nav class="flex flex-col gap-16 items-center text-white text-center">
+          <a href="#inicio" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/home-svgrepo-com.svg" alt="" class="w-8 h-8 mr-4"><p class="pr-6">Inicio</p></div></a>
+          <a href="#galeria" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/picture-svgrepo-com.svg" alt="" class="w-8 h-8 mr-4"><p class="pr-2">Galería</p></div></a>
+          <a href="#servicios" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/barber-pole-svgrepo-com (2).svg" alt="" class="w-8 h-8 mr-4"><p class="">Servicios</p></div></a>
+          <a href="#nosotros" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/about-svgrepo-com (2).svg" alt="" class="w-8 h-8 mr-4">Nosotros</div> </a>
+          <a href="#contacto" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/phone-svgrepo-com.svg" alt="" class="w-8 h-8 mr-4">Contacto</div></a>
+        </nav>
+      </div>
+      
     </div>
-    <nav class="hidden lg:flex justify-around gap-6">
+    <nav class="hidden xl:flex justify-around gap-6">
       <a href="#inicio" class="anchor">Inicio</a>
       <a href="#galeria" class="anchor">Galería</a>
       <a href="#servicios" class="anchor">Servicios</a>

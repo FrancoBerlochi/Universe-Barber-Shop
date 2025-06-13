@@ -160,8 +160,10 @@ a {
 }
 
 .barber-pole {
+  opacity: 0;
+  top: -15px;
   width: 30px;
-  height: 130px;
+  height: 4rem;
   border-radius: 40px;
   overflow: hidden;
   border: 5px solid #bbbbbb;
@@ -171,6 +173,7 @@ a {
       white 40px 60px,
       blue 60px 80px);
   background-size: 100% 113px;
+  transition: all 0.5s ease;
   /* Alinea verticalmente con la animación */
   animation: scroll-stripes 1s linear infinite;
 }
@@ -205,14 +208,37 @@ a {
 }
 
 .burger::after{
-  transform: rotate(0deg) translateY(0.60rem);
+  transform: rotate(0deg) translateY(0.40rem);
 }
 
 .burger::before{
-  transform: rotate(0deg) translateY(-0.85rem);
+  transform: rotate(0deg) translateY(-0.65rem);
 }
 
+.burger-container{
+  transition: all 0.5s ease;
+}
 
+.burger-check:checked + div{
+  opacity: 0;
+  transform: rotate(360deg);
+}
+
+.burger-check:checked ~ .barber-pole{
+  opacity: 100;
+  transform: rotate(360deg);
+}
+
+.burger-nav{
+  background: #1f1f1f;
+  padding-top: 140px;
+  transition: transform 0.3s ease;
+  transform: translateX(160px) translateY(-20px);
+}
+
+.burger-check:checked ~ .burger-nav{
+  transform: translateX(calc(-100vw + 56px)) translateY(-20px);
+}
 
 @media screen and (min-height: 900px) and (max-height: 1440px)  and (min-width: 1281px) {
   .img-init {
