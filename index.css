@@ -188,4 +188,8 @@ a {
   .service-d{
     font-size: .9rem;
   }
+
+  #contacto{
+    padding-top: 60px;
+  }
 }
