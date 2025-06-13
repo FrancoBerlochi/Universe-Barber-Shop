@@ -221,3 +221,8 @@ a {
     margin-bottom: 45px;
   }
 }
+
+
+@media screen and (min-height: 750px) and (max-height: 950px) and (max-width: 600px){
+ 
+}
