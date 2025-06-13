@@ -192,4 +192,9 @@ a {
   #contacto{
     padding-top: 60px;
   }
+
+  .rating-card{
+    width: 30vw;
+    height: auto;
+  }
 }
