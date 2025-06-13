@@ -216,10 +216,10 @@ a {
 }
 
 .burger-container{
-  transition: all 0.5s ease;
+  transition: transform 0.3s ease;
 }
 
-.burger-check:checked + div{
+.burger-check:checked ~ .burger-container{
   opacity: 0;
   transform: rotate(360deg);
 }

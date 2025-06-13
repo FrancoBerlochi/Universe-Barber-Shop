@@ -9,29 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <script src="./index.js"></script>
+  <script defer src="./index.js"></script>
   <title>Universe Barber Shop</title>
 </head>
 <body id="inicio">
-  <header id="header" class="flex justify-between items-center w-full px-6 py-5 sticky top-0 z-2">
+  <header id="header" class="flex justify-between items-center w-full px-6 py-5 sticky top-0 z-2 overflow-hidden">
     <a href="#inicio" class="lg:block"><h2 class="max-md:text-sm flex text-xl font-semibold"><img src="./assets/tijera-y-peine.png" alt="tijera-y-peine" class="max-md:h-6 max-md:h-4 h-8 w-8"> Universe Barber Shop</h2></a>
-    <div class="xl:hidden relative w-[2rem] h-[2rem] ">
-      <input type="checkbox" class="xl:hidden inset-0 absolute z-50 opacity-0 burger-check"/>
-      <div class="burger-container absolute inset-0 z-40">
-        <label class="burger"></label>
-      </div>
-      <div class="barber-pole absolute z-40"></div>
-      <div class="burger-nav w-screen h-[103vh]">
-        <nav class="flex flex-col gap-16 items-center text-white text-center">
-          <a href="#inicio" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/home-svgrepo-com.svg" alt="" class="w-8 h-8 mr-4"><p class="pr-6">Inicio</p></div></a>
-          <a href="#galeria" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/picture-svgrepo-com.svg" alt="" class="w-8 h-8 mr-4"><p class="pr-2">Galería</p></div></a>
-          <a href="#servicios" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/barber-pole-svgrepo-com (2).svg" alt="" class="w-8 h-8 mr-4"><p class="">Servicios</p></div></a>
-          <a href="#nosotros" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/about-svgrepo-com (2).svg" alt="" class="w-8 h-8 mr-4">Nosotros</div> </a>
-          <a href="#contacto" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/phone-svgrepo-com.svg" alt="" class="w-8 h-8 mr-4">Contacto</div></a>
-        </nav>
-      </div>
-      
-    </div>
     <nav class="hidden xl:flex justify-around gap-6">
       <a href="#inicio" class="anchor">Inicio</a>
       <a href="#galeria" class="anchor">Galería</a>
@@ -41,6 +24,24 @@
     </nav>
     <a href="" class="reserva hidden lg:block">Reservar turno</a>
   </header>
+  <div class="fixed top-5 right-6 w-8 h-8 z-50">
+    <div class="xl:hidden relative">
+      <input type="checkbox" class="xl:hidden inset-0 absolute z-50 opacity-0 burger-check"/>
+      <div class="burger-container absolute inset-0 z-40">
+        <label class="burger"></label>
+      </div>
+      <div class="barber-pole absolute z-40"></div>
+      <div class="burger-nav w-screen h-[103vh] z-40">
+        <nav class="flex flex-col gap-16 items-center text-white text-center">
+          <a href="#inicio" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/home-svgrepo-com.svg" alt="" class="w-8 h-8 mr-4"><p class="pr-6">Inicio</p></div></a>
+          <a href="#galeria" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/picture-svgrepo-com.svg" alt="" class="w-8 h-8 mr-4"><p class="pr-2">Galería</p></div></a>
+          <a href="#servicios" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/barber-pole-svgrepo-com (2).svg" alt="" class="w-8 h-8 mr-4"><p class="">Servicios</p></div></a>
+          <a href="#nosotros" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/about-svgrepo-com (2).svg" alt="" class="w-8 h-8 mr-4">Nosotros</div> </a>
+          <a href="#contacto" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/phone-svgrepo-com.svg" alt="" class="w-8 h-8 mr-4">Contacto</div></a>
+        </nav>
+      </div>
+    </div>
+  </div>
   <main class="overflow-hidden">
     <section class="max-md:justify-center max-md:w-screen max-md:h-[93vh] flex justify-between w-full h-screen relative">
       <img src="./assets/hero-image.jpeg" alt="" class="max-md:hidden absolute w-full h-screen -z-10 brightness-50">

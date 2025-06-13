@@ -13,7 +13,6 @@ window.addEventListener("scroll", () => {
 function updateUniverseClass() {
   const universe = document.getElementById("Universe");
   if (!universe) return;
-
   if (window.innerWidth < 768) {
     universe.classList.add("appear-mobile");
     universe.classList.remove("appear");
