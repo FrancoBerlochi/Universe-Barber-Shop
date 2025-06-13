@@ -9,3 +9,22 @@ window.addEventListener("scroll", () => {
     header.classList.add("bg-white");
   }
 })  
+
+function updateUniverseClass() {
+  const universe = document.getElementById("Universe");
+  if (!universe) return;
+
+  if (window.innerWidth < 768) {
+    universe.classList.add("appear-mobile");
+    universe.classList.remove("appear");
+  } else {
+    universe.classList.remove("appear-mobile");
+    universe.classList.add("appear");
+  }
+}
+
+// Ejecutar al cargar la página
+window.addEventListener("DOMContentLoaded", updateUniverseClass);
+
+// Ejecutar al cambiar el tamaño
+window.addEventListener("resize", updateUniverseClass);

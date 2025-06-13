@@ -97,6 +97,12 @@ a {
   animation: appear 10s steps(30) infinite, blinck 1s infinite forwards;
 }
 
+.appear-mobile{
+  overflow: hidden;
+  width: 0;
+  animation: appear-mobile 10s steps(30) infinite, blinck 1s infinite forwards;
+}
+
 @keyframes appear {
   0% {
     width: 0px;
@@ -104,6 +110,20 @@ a {
 
   18%,82%{
     width: 300px;
+  }
+
+  100% {
+    width: 0px;
+  }
+}
+
+@keyframes appear-mobile {
+  0% {
+    width: 0px;
+  }
+
+  18%,82%{
+    width: 180px;
   }
 
   100% {
