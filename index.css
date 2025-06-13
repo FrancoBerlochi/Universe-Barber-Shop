@@ -197,4 +197,7 @@ a {
     width: 30vw;
     height: auto;
   }
+  .rating-card > p.mb-6{
+    margin-bottom: 45px;
+  }
 }
