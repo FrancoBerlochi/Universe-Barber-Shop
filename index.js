@@ -27,3 +27,23 @@ window.addEventListener("DOMContentLoaded", updateUniverseClass);
 
 // Ejecutar al cambiar el tamaño
 window.addEventListener("resize", updateUniverseClass);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const checkbox = document.querySelector(".burger-check");
+  const menuLinks = document.querySelectorAll(".burger-nav a");
+
+  menuLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      checkbox.checked = false;
+      document.body.classList.remove("overflow-hidden"); // también quitás el no-scroll
+    });
+  });
+
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  });
+});

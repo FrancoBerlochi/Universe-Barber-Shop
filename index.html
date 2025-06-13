@@ -12,7 +12,7 @@
   <script defer src="./index.js"></script>
   <title>Universe Barber Shop</title>
 </head>
-<body id="inicio">
+<body id="inicio" class="">
   <header id="header" class="flex justify-between items-center w-full px-6 py-5 sticky top-0 z-2 overflow-hidden">
     <a href="#inicio" class="lg:block"><h2 class="max-md:text-sm flex text-xl font-semibold"><img src="./assets/tijera-y-peine.png" alt="tijera-y-peine" class="max-md:h-6 max-md:h-4 h-8 w-8"> Universe Barber Shop</h2></a>
     <nav class="hidden xl:flex justify-around gap-6">
@@ -26,14 +26,14 @@
   </header>
   <div class="fixed top-5 right-6 w-8 h-8 z-50">
     <div class="xl:hidden relative">
-      <input type="checkbox" class="xl:hidden inset-0 absolute z-50 opacity-0 burger-check"/>
+      <input id="check" type="checkbox" class="xl:hidden inset-0 absolute z-50 opacity-0 burger-check"/>
       <div class="burger-container absolute w-8 h-8 z-40">
         <label class="burger"></label>
       </div>
       <div class="barber-pole absolute z-40"></div>
       <div class="burger-nav w-screen h-[103vh] z-40">
         <nav class="flex flex-col gap-16 items-center text-white text-center">
-          <a href="#inicio" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/home-svgrepo-com.svg" alt="" class="w-8 h-8 mr-4"><p class="pr-6">Inicio</p></div></a>
+          <label for="check"><a href="#inicio" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/home-svgrepo-com.svg" alt="" class="w-8 h-8 mr-4"><p class="pr-6">Inicio</p></div></a></label>
           <a href="#galeria" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/picture-svgrepo-com.svg" alt="" class="w-8 h-8 mr-4"><p class="pr-2">Galería</p></div></a>
           <a href="#servicios" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/barber-pole-svgrepo-com (2).svg" alt="" class="w-8 h-8 mr-4"><p class="">Servicios</p></div></a>
           <a href="#nosotros" class=""><div class="flex justify-center items-center pb-2"><img src="./assets/about-svgrepo-com (2).svg" alt="" class="w-8 h-8 mr-4">Nosotros</div> </a>
@@ -42,7 +42,7 @@
       </div>
     </div>
   </div>
-  <main class="overflow-hidden">
+  <main id="main" class="overflow-hidden">
     <section class="max-md:justify-center max-md:w-screen max-md:h-[93vh] flex justify-between w-full h-screen relative">
       <img src="./assets/hero-image.jpeg" alt="" class="max-md:hidden absolute w-full h-screen -z-10 brightness-50">
       <div class="max-md:absolute max-md:w-full max-md:h-screen max-md:-z-10  max-md:bg-[#111]"></div>
@@ -57,9 +57,9 @@
       <h2 class="text-4xl font-semibold mt-24">Galería de cortes</h2>
       <div class="line mt-1 mb-2"></div>
       <h3 class="text-xl text-gray-700">Mirá nuestros cortes y encontrá tu look!</h3>
-      <article class="grid grid-cols-3 grid-rows-3 gap-10 mt-20 mx-20">
+      <article class="grid grid-cols-3 grid-rows-3 max-md:grid-cols-1 gap-10 mt-20 mx-20">
         <div class="relative overflow-hidden hover:-translate-y-2 transition-transform duration-300">
-          <div><img src="./assets/hero-image.jpeg" alt=""></div>
+          <div class=""><img src="./assets/hero-image.jpeg" alt="" class=""></div>
           <div class="absolute inset-0 bg-gradient-to-t from-[#3063d3d2] opacity-0 transition-opacity duration-300 hover:opacity-90">
             <div class="flex justify-center items-center absolute inset-0 p-4">
               <h3 class="text-2xl mb-5 text-white mt-20 font-semibold">Nombre del corte</h3>
