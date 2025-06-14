@@ -313,7 +313,10 @@ a {
     width: 90vw;  
   }
   .button--previous{
-    transform: rotate(180deg) translateY(50%);
+    display: none;
+  }
+  .button--next{
+    display: none;
   }
 }
 
