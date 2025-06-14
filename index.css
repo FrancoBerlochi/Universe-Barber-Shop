@@ -241,58 +241,21 @@ a {
 }
 
 
-@media screen and (min-height: 900px) and (max-height: 1440px)  and (min-width: 1281px) {
-  .img-init {
-    margin-left: 100px;
-    margin-right: 100px;
-    transform: translateY(90px);
-  }
-  .text-init{
-    padding-right: 100px;
-    padding-left: 100px;
-    padding-top: 300px;
-  }
-}
-
-@media screen and (min-width: 1280px) and (max-width: 1610px) {
-  .service-t{
-    font-size: 1.2rem;
-  }
-  .service-d{
-    font-size: .9rem;
-  }
-
-  #contacto{
-    padding-top: 60px;
-  }
-
-  .rating-card{
-    width: 30vw;
-    height: auto;
-  }
-  .rating-card > p.mb-6{
-    margin-bottom: 45px;
-  }
-}
 
 
-@media screen and (min-height: 750px) and (max-height: 950px) and (max-width: 600px){
- 
-}
 
 .list {
   display: flex;
   gap: 8px;
   padding: 16px;
-
   list-style: none;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
-
   scrollbar-width: none;
   -ms-overflow-style: none;
   width: 50vw;
 }
+
 
 .list::-webkit-scrollbar {
   display: none;
@@ -343,4 +306,59 @@ a {
 
 .button--next {
   right: 1.5rem;
+}
+
+@media screen and (min-height: 600px) and (max-height: 700px) {
+  .list{
+    width: 85vw;
+  }
+  .button--previous{
+    transform: rotate(180deg) translateY(50%);
+  }
+}
+
+@media screen and (min-height: 750px) and (max-height: 950px) and (max-width: 600px){
+  .button--previous{
+    transform: rotate(180deg) translateY(50%);
+  }
+}
+
+@media screen and (min-height: 900px) and (max-height: 1440px)  and (min-width: 1281px) {
+  .img-init {
+    margin-left: 100px;
+    margin-right: 100px;
+    transform: translateY(90px);
+  }
+  .text-init{
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top: 300px;
+  }
+  .button--previous{
+    transform: rotate(180deg) translateY(50%);
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1610px) {
+  .service-t{
+    font-size: 1.2rem;
+  }
+  .service-d{
+    font-size: .9rem;
+  }
+
+  #contacto{
+    padding-top: 60px;
+  }
+
+  .rating-card{
+    width: 30vw;
+    height: auto;
+  }
+  .rating-card > p.mb-6{
+    margin-bottom: 45px;
+  }
+  .button--previous{
+    transform: rotate(180deg) translateY(50%);
+  }
 }
