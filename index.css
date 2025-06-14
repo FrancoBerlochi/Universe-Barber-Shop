@@ -344,8 +344,12 @@ a {
 
 @media screen and (min-width: 1280px) and (max-width: 1610px) {
   .img-init{
-    margin-left: 100px;
+    margin-right: 130px;
   }
+  .text-init{
+    padding-left: 100px;
+  }
+
   .service-t{
     font-size: 1.2rem;
   }
