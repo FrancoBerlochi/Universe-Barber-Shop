@@ -36,6 +36,7 @@ a {
 .anchor {
   color: black;
   position: relative;
+  transition: transform 0.2s ease;
 }
 
 .anchor::after {
@@ -51,36 +52,24 @@ a {
   transform-origin: bottom;
 }
 
+.anchor:hover{
+  transform: scale(1.1);
+}
+
 .anchor:hover::after {
   transform: scaleX(1);
 }
 
-
-.reserva {
-  border: 1px solid #1f1f1f;
-  border-right: 2px solid black;
-  padding: 6px;
-  transition: all 0.2s ease;
+.icon {
+  transition: transform 0.3s ease;
 }
 
-.reserva:hover {
-  background: #1f1f1f;
-  color: #f1f1f1;
+.icon:hover {
+  transform: scale(1.3);
 }
 
 
-.reserva-2 {
-  border: 1px solid #f1f1f1;
-  border-right: 2px solid #f1f1f1;
-  padding: 6px;
-  color: #f1f1f1;
-  transition: all 0.2s ease;
-}
 
-.reserva-2:hover {
-  background: #f1f1f1;
-  color: #1f1f1f;
-}
 
 .img-left {
   border-radius: 2%;
