@@ -52,9 +52,7 @@ a {
   transform-origin: bottom;
 }
 
-.anchor:hover{
-  transform: scale(1.1);
-}
+
 
 .anchor:hover::after {
   transform: scaleX(1);
@@ -69,15 +67,13 @@ a {
 }
 
 
-
-
 .img-left {
   border-radius: 2%;
   transition: filter 0.3s ease;
 }
 
 .img-left:hover {
-  filter: drop-shadow(0 0 0.75rem #3063d3);
+  filter: drop-shadow(0rem 0rem 0.8rem #3d5afa) drop-shadow(0rem 0rem 0.2rem #3d6efa);
 }
 
 .appear {
@@ -231,8 +227,6 @@ a {
 
 
 
-
-
 .list {
   display: flex;
   gap: 8px;
@@ -279,13 +273,13 @@ a {
   width: 3rem;
   height: 3rem;
   transform: translateY(-50%);
-  background: #fff;
+  background: #88aae6;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .button:hover{
-  background: #ddd;
+  background: #697de3;
 }
 
 .button--previous {
@@ -307,12 +301,60 @@ a {
   .button--next{
     display: none;
   }
+
+  #contacto > div{
+    padding-left: 10px;
+  }
+
+  #contacto > div > div > h2{
+    padding-right: 20px;
+  }
+
+  #contacto > div > div > h3{
+    padding-right: 20px;
+  }
 }
 
 @media screen and (min-height: 750px) and (max-height: 950px) and (max-width: 600px){
-  .button--previous{
-    transform: rotate(180deg) translateY(50%);
+
+  .list{
+    width: 90vw; 
   }
+
+  .item{
+    height: 50vh;
+  }
+  .button--previous{
+    display: none;
+  }
+  .button--next{
+    display: none;
+  }
+
+  .main-text{
+    padding-top: 280px;
+  }
+
+  .service-container{
+    height: 35vh;
+  }
+
+  #nosotros{
+    height: 120vh;
+  }
+
+  #contacto > div{
+    padding-left: 10px;
+  }
+
+  #contacto > div > div > h2{
+    padding-right: 20px;
+  }
+
+  #contacto > div > div > h3{
+    padding-right: 20px;
+  }
+
 }
 
 @media screen and (min-height: 900px) and (max-height: 1440px)  and (min-width: 1281px) {
