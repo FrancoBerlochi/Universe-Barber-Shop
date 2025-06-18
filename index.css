@@ -313,6 +313,9 @@ a {
   #contacto > div > div > h3{
     padding-right: 20px;
   }
+  #nosotros{
+    height: 160vh;
+  }
 }
 
 @media screen and (min-height: 750px) and (max-height: 950px) and (max-width: 600px){
@@ -354,7 +357,9 @@ a {
   #contacto > div > div > h3{
     padding-right: 20px;
   }
-
+  .mobile-nav{
+    transform: translateY(120px);
+  }
 }
 
 @media screen and (min-height: 900px) and (max-height: 1440px)  and (min-width: 1281px) {
