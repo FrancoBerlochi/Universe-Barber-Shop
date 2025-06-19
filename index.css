@@ -378,7 +378,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1610px) {
+@media screen and (min-width: 1130px) and (max-width: 1610px) and (min-height: 600px) {
   .img-init{
     margin-right: 130px;
   }
@@ -394,7 +394,7 @@ a {
   }
 
   #contacto{
-    padding-top: 60px;
+    padding-top: 30px;
   }
 
   .rating-card{
