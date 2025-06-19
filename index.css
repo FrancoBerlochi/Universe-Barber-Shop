@@ -318,7 +318,7 @@ a {
   }
 }
 
-@media screen and (min-height: 750px) and (max-height: 950px) and (max-width: 600px){
+@media screen and (min-height: 740px) and (max-height: 950px) and (max-width: 600px){
 
   .list{
     width: 90vw; 
