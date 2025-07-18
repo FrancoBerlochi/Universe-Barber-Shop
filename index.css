@@ -131,6 +131,12 @@ a {
   }
 }
 
+.gradient-txt{
+  background-image: linear-gradient(to right, #3063d3, #6630d3);
+  background-clip: text;
+  color: transparent;
+}
+
 .line {
   width: 100px;
   height: 2px;
@@ -316,6 +322,34 @@ a {
   #nosotros{
     height: 160vh;
   }
+
+  .slider{
+    aspect-ratio: 10/16;
+    width: 300px;
+    position: relative;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  } 
+
+  .slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+  }
+
+  .slider img{
+    width: 100%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: center;
+  }
+
+
 }
 
 @media screen and (min-height: 740px) and (max-height: 950px) and (max-width: 600px){
@@ -408,3 +442,4 @@ a {
     transform: rotate(180deg) translateY(50%);
   }
 }
+

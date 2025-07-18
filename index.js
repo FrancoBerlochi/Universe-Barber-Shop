@@ -62,3 +62,33 @@ function handleClick(direction) {
     list.scrollBy({ left: itemWidth, behavior: "smooth" });
   }
 }
+
+function handleGalery(category) {
+  const allImages = document.querySelectorAll("#galeria img");
+  const allButtons = document.querySelectorAll("#buttons div");
+
+  allImages.forEach((img) => {
+    const imgCategory = img.dataset.category;
+
+    if (category === "all" || imgCategory === category) {
+      img.classList.remove("hidden");
+    } else {
+      img.classList.add("hidden");
+    }
+  });
+
+  allButtons.forEach((div) => {
+    const divCategory = div.id;
+    div.classList.remove("bg-gradient-to-r");
+    div.classList.remove("from-[#3063d3]");
+    div.classList.remove("to-[#814ee5]");
+    div.classList.add("bg-[#abbdec]");
+    if (divCategory === category) {
+      div.classList.add("bg-gradient-to-r");
+      div.classList.add("from-[#3063d3]");
+      div.classList.add("to-[#814ee5]");
+    }
+  })
+
+ 
+}
