@@ -330,7 +330,7 @@ a {
     display: flex;
     overflow-y: hidden;
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: x proximity;
     height: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
