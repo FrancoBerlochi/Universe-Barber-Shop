@@ -79,14 +79,14 @@
             </div>
           </div> 
       </article>-->
-      <a href="#modal">modal</a>
-      <div id="modal" class="modal-1">
+      <a href="#modal" class="lg:hidden mt-16 flex gap-2">Filtro de Looks <p class="rotate-90 text-xl">></p></a>
+      <div id="modal" class="modal-1 lg:flex">
         <div id="buttons" class="flex flex-col lg:flex-row items-center gap-8 mt-12">
           <div id="all" class="bg-gradient-to-r from-[#3063d3] to-[#814ee5] h-8 rounded-full shadow-md transition-colors duration-300 hover:brightness-90"><button onclick="handleGalery('all')" class="cursor-pointer py-1 px-6 text-white" type="button">Todos los looks!</button></div>
           <div id="cortes" class="h-8 rounded-full shadow-md transition-colors duration-300 bg-[#abbdec] hover:brightness-90"><button onclick="handleGalery('cortes')" class="cursor-pointer py-1 px-6 text-white" type="button">Cortes</button></div>
           <div id="coloraciones" class="h-8 rounded-full shadow-md transition-colors duration-300 bg-[#abbdec] hover:brightness-90"><button onclick="handleGalery('coloraciones')" class="cursor-pointer py-1 px-6 text-white" type="button">Coloración</button></div>
           <div id="barbas" class="h-8 rounded-full shadow-md transition-colors duration-300 bg-[#abbdec] hover:brightness-90"><button onclick="handleGalery('barbas')" class="cursor-pointer py-1 px-6 text-white" type="button">Barba</button></div>
-          <a href="#close" onclick="console.log('a')"><p class="text-red-500">X</p></a>
+          <a href="#close" onclick="console.log('a')" class="lg:hidden"><p class="text-red-500">X</p></a>
         </div>
       </div>
       
