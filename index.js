@@ -64,7 +64,7 @@ function handleClick(direction) {
 }
 
 function handleGalery(category) {
-  const allImages = document.querySelectorAll("#galeria img");
+  const allImages = document.querySelectorAll("#galeria li");
   const allButtons = document.querySelectorAll("#buttons div");
 
   allImages.forEach((img) => {

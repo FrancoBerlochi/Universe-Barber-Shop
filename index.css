@@ -297,6 +297,21 @@ a {
   right: 1.5rem;
 }
 
+.modal-1{
+  position: fixed;
+  width: 200px;
+  height: 340px;
+  top: 20vh;
+  z-index: 500;
+  background: #697de3;
+  display: none;
+}
+
+.modal-1:target{
+  display: block;
+}
+
+
 @media screen and (min-height: 600px) and (max-height: 700px) {
   .list{
     width: 90vw;  
